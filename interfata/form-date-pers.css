@@ -1,0 +1,38 @@
+.login-container header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #555;
+}
+
+.input-field {
+    padding-left: 30px;
+    width: calc(100% - 40px);
+}
+
+.submit {
+    width: 100%;
+    padding: 10px 0;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover {
+    background: #45a049;
+}
