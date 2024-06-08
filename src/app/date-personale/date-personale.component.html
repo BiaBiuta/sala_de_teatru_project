@@ -1,0 +1,38 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Date Personale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+<div class="form-box">
+    <form class="login-container"  #personalDataForm [formGroup]="datePersonale" (ngSubmit)="submitForm()">
+        <header>Introdu datele personale</header>
+        <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" class="input-field" placeholder="Nume" required="" formControlName="Name">
+        </div>
+        <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" class="input-field" placeholder="Email" required="" formControlName="email">
+        </div>
+        <div class="input-box">
+            <i class="fas fa-id-card"></i>
+            <input type="text" class="input-field" placeholder="CNP" required="" formControlName="cnp">
+        </div>
+        <div class="input-box">
+            <i class="fas fa-university"></i>
+            <input type="text" class="input-field" placeholder="Cod IBAN" required="" formControlName="codIban">
+        </div>
+        <div class="input-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" class="input-field" placeholder="Adresă" required="" formControlName="adresa">
+        </div>
+        <button type="submit" class="submit">Trimite</button>
+    </form>
+</div>
+
+
+</body></html>

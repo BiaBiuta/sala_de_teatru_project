@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Booking</title>
+  <!--Google Fonts and Icons-->
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+<div class="center">
+  <div class="tickets">
+    <div class="ticket-selector">
+      <div class="head">
+        <div class="title"> Theatre</div>
+      </div>
+      <div class="seats">
+        <div class="status">
+          <div class="item">Available</div>
+          <div class="item">Booked</div>
+          <div class="item">Selected</div>
+        </div>
+        <div class="all-seats" #seatsContainer>
+          <input type="checkbox" name="tickets" id="s1" />
+          <label for="s1" class="seat booked"></label>
+        </div>
+      </div>
+      <div class="timings">
+        <div class="dates">
+          <input type="radio" name="date" id="d1" checked />
+          <label for="d1" class="dates-item">
+            <div class="day">1-19</div>
+            <div class="date">40lei</div>
+          </label>
+          <input type="radio" id="d2" name="date" />
+          <label class="dates-item" for="d2">
+            <div class="day">20-39</div>
+            <div class="date">30lei</div>
+          </label>
+          <input type="radio" id="d3" name="date" />
+          <label class="dates-item" for="d3">
+            <div class="day">30-49</div>
+            <div class="date">20lei</div>
+          </label>
+          <input type="radio" id="d4" name="date" />
+          <label class="dates-item" for="d4">
+            <div class="day">40-59</div>
+            <div class="date">50lei</div>
+          </label>
+        </div>
+
+      </div>
+    </div>
+    <div class="price">
+      <div class="total">
+        <span> <span class="count">0</span> Tickets </span>
+        <div class="amount">0</div>
+      </div>
+      <button  (click)="onBuyClick()" type="button">Book</button>
+      <button  (click)="ckeckSeats()" type="button">MySeat</button>
+      <button  (click)="cancelSeats()" type="button">Cancel</button>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

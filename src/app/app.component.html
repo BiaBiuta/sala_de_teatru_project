@@ -1,0 +1,5 @@
+<div>
+  <app-interface (signIn)="handleSignIn()" [hidden]="!showLoginForm" ></app-interface>
+  <app-view-theatre (datePersonalGol)="handleDatePersonal() " [hidden]="showLoginForm" ></app-view-theatre>
+  <app-date-personale (pressButton)="handleReserved()" [hidden]="!showDatePersonal "></app-date-personale>
+</div>
